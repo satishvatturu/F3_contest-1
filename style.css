@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1D1D23;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heading-div {
+    /* border: 1px solid white; */
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.heading-div>h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.timer-div {
+    padding-inline: 30px;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #34344A;
+    margin-block: 15px;
+    /* border: 1px solid red; */
+}
+
+.set-time {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.time {
+    height: 30px;
+    width: 100px;
+    outline: none;
+    font-family: Roboto;
+    margin-right: 35px;
+}
+
+.time-label {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 15px;
+}
+
+.secs {
+    margin-right: 0px !important;
+}
+
+.set-btn>button {
+    width: 124px;
+    height: 52px;
+    border-radius: 26px;
+    background-color: #F0F757;
+    color: #34344A;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+.current-timer-div {
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 15px;
+    border-radius: 50px;
+    background: #39393E;
+    /* border: 1px solid yellow; */
+}
+
+.current-timer-div>p {
+    margin-inline: 80px;
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.timer-list>p {
+    display: none;
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 400;
+    margin-block: 15px;
+}
+
+.countdown-div {
+    padding-inline: 30px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #34344A;
+    margin-block: 15px;
+}
+
+.time-left>p {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.countdown>span {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.dot {
+    margin-inline: 20px;
+}
+
+.delete-Btn>button {
+    width: 124px;
+    height: 52px;
+    border-radius: 26px;
+    background-color: #F0F757;
+    color: #34344A;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 494px) and (max-width: 687px) {
+    .timer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .time-label {
+        margin-right: 0px;
+    }
+
+    .time {
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 494px) {
+    .timer-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .timer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .time-label {
+        margin-right: 0px;
+    }
+
+    .time {
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 661px) {
+    .countdown-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
